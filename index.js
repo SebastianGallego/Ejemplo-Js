@@ -69,8 +69,48 @@ function calculadoraPropina() {
 
     alert(mensaje);
 
+}
 
+
+// Verificar Contraseña:
+// Crea un programa que solicite al usuario ingresar una contraseña. 
+// Luego, compara esa contraseña con una contraseña predefinida y 
+// muestra un mensaje si la contraseña es correcta o incorrecta.
+
+function verificarContrasenia() {
+    
+    const contraseniaIngresada  = prompt("Ingresala contraseña:");
+
+    if ( contraseniaIngresada == "HolaMundo") {
+        alert("La contraseña es Correcta");
+               
+    } else{
+        alert("La contraseña es incorrecta");
+    }
 
 }
 
 
+// Comparación de Números Pares:
+// Escribe un programa que determine si un número ingresado por el usuario es par o impar. 
+//Imprime un mensaje apropiado para cada caso.
+
+
+function numerosPares() {
+
+    const nroIngresado = parseInt(prompt("Ingrese el Número:"));
+
+    if (isNaN(nroIngresado)) {
+        alert("Ingresar un número válido");
+        return;
+    }
+
+    if (nroIngresado % 2 === 0) {
+        alert("El número ingresado es Par");
+               
+    } else{
+        alert("El número ingresado es imPar");
+    }
+
+
+}
