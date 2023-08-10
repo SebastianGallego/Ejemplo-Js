@@ -12,7 +12,6 @@ function calcularEdad() {
     }
 
     const edad = 2023 - anioNacimiento;
-
     alert(`Tu edad es ${edad} años.`);
 }
 
@@ -29,11 +28,7 @@ function convertirMoneda() {
         alert("Ingresar un número válido");
         return;
     }
-    
-    
     let cantEuros = dolares * 0.9;
-
-
     alert(`${dolares} dolares equivalen a ${cantEuros} euros.`);
 }
 
@@ -66,9 +61,7 @@ function calculadoraPropina() {
     mensaje += "\n" + `Porcentaje de Propina: ${porcentajePropina} % `;
     mensaje += "\n" + `Monto de la Propina: $ ${propina}`;
     mensaje += "\n" + `Total a Pagar: $ ${total}`;
-
     alert(mensaje);
-
 }
 
 
@@ -87,7 +80,6 @@ function verificarContrasenia() {
     } else{
         alert("La contraseña es incorrecta");
     }
-
 }
 
 
@@ -111,6 +103,50 @@ function numerosPares() {
     } else{
         alert("El número ingresado es imPar");
     }
-
-
 }
+
+
+
+// La Jubilación
+// 1)En este ejercicio, crearás un programa que le indique a las mujeres si están en edad, 
+//    o no, de jubilarse (en Argentina, las mujeres pueden jubilarse a los 60 años).
+// Pedile al usuario que ingrese su edad y guardá este valor en una Variable. 
+// A partir de ese input, infórmale si puede jubilarse o no.
+// 2) En este ejercicio, modificarás tu programa para informar, tanto a las mujeres 
+// como a los hombres, si están en edad de jubilarse (en Argentina, los hombres pueden 
+// jubilarse a los 65 años).
+// Para esto, además de preguntar la edad del usuario deberás confirmar si es hombre o mujer.
+// Te recomendamos empezar con dos bloques if.
+// 3) Optimizá tu código de modo que, todo el ejercicio, se resuelva con un solo if. 
+// Usá operadores lógicos y de relación.
+
+
+
+
+
+// ### Ejercicio Final:
+
+// Enunciado: Calculadora de Aprobación Escolar
+
+// Escribe un programa en JavaScript que ayude a determinar si un estudiante ha aprobado o 
+// reprobado una asignatura. El programa debe realizar lo siguiente:
+
+// 1. Solicitar al usuario que ingrese su nota en la asignatura (un número entre 0 y 100).
+// 2. Utilizar la estructura if para evaluar la nota ingresada. Si la nota es mayor o 
+// igual a 60, mostrar un mensaje que diga "Aprobado". Si la nota es menor a 60, 
+// mostrar un mensaje que diga "Reprobado".
+// 3. Si la nota es menor a 0 o mayor a 100, mostrar un mensaje que indique que la nota 
+// es inválida.
+// 4. Además de la nota, preguntar al usuario si entregó todos los trabajos y asistió a 
+// todas las clases (sí o no). Si el usuario responde "no" a cualquiera de estas preguntas, 
+// mostrar un mensaje adicional que indique "Debe mejorar la asistencia y la entrega de 
+// trabajos para la próxima evaluación".
+// 5. Utilizar un operador lógico (por ejemplo, && o ||) para combinar las respuestas 
+// sobre la asistencia y la entrega de trabajos. Si el estudiante tiene baja asistencia o 
+// no entregó todos los trabajos, mostrar el mensaje adicional mencionado en el punto anterior.
+// 6. Utilizar la estructura switch para mostrar un mensaje personalizado dependiendo de 
+// la nota obtenida. Por ejemplo, si la nota es entre 90 y 100, mostrar 
+// "¡Excelente trabajo!". Si la nota está entre 80 y 89, mostrar "Buen trabajo". 
+// Y así sucesivamente.
+
+
