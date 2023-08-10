@@ -120,13 +120,33 @@ function numerosPares() {
 // 3) Optimizá tu código de modo que, todo el ejercicio, se resuelva con un solo if. 
 // Usá operadores lógicos y de relación.
 
+function jubilacion() {
+    
+    const sexo  = prompt("Ingres se sexo (M ó F):");
+    const edad = parseInt(prompt("Ingrese su edad"));
+
+ 
+    if (isNaN(edad)) {
+        alert("Error: Ingresar un número válido");
+        return;
+    }
+
+    if (sexo != "m" && sexo != "M" && sexo != "f" && sexo != "F") {
+        alert("Error debe Ingresar M ó F");
+        return;
+    }
+
+
+    if ( ((sexo == "m" || sexo == "M") && (edad >=65)) || ( (sexo == "f" || sexo == "F") && (edad >=60)))  {
+            alert(`Puede Jubilarse - Es ${sexo} y tiene ${edad} años`);
+        } else {
+            alert(`No Puede Jubilarse - Es ${sexo} y tiene ${edad} años`);
+            }
+}
 
 
 
-
-// ### Ejercicio Final:
-
-// Enunciado: Calculadora de Aprobación Escolar
+// Calculadora de Aprobación Escolar
 
 // Escribe un programa en JavaScript que ayude a determinar si un estudiante ha aprobado o 
 // reprobado una asignatura. El programa debe realizar lo siguiente:
@@ -150,3 +170,8 @@ function numerosPares() {
 // Y así sucesivamente.
 
 
+function calculadoraEscolar() {
+
+
+
+}
